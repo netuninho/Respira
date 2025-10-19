@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-misty-rose: #F2DCDB;
+  --color-cherry-pink: #F2AEBC;
+  --color-burgundy: #6C0820;
+  --color-lapis-blue: #3D5D91;
+  --color-silver-blue: #5A86CB;
+}
+
+@layer base {
+  body {
+    @apply bg-[--color-misty-rose] text-[--color-lapis-blue] flex items-center justify-center min-h-screen transition-colors ease-in-out duration-700;
+    font-family: 'Quicksand', sans-serif;
+  }
+}
