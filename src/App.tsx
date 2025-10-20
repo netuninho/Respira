@@ -165,12 +165,8 @@ export default function App() {
         </button>
       </div>
 
-      <footer className="absolute bottom-6 text-[--color-lapis-blue]/50 text-sm">
-        <p>Code with heart. Design with purpose 💖</p>
-        <p>
-          © 2025. Produzido por {''}
-          <a className='underline-fancy' href="https://github.com/netuninho" target="_blank">Manuela Silva</a>
-        </p>
+      <footer className="absolute bottom-6 text-tiny whitespace-nowrap">
+        <p>Code with heart. Design with purpose 💖 © 2025. Produzido por {''} <a className='underline-fancy' href="https://github.com/netuninho" target="_blank">Manuela Silva</a></p>
       </footer>
     </main>
   )

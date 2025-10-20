@@ -6,6 +6,8 @@
   --color-burgundy: #6C0820;
   --color-lapis-blue: #3D5D91;
   --color-silver-blue: #5A86CB;
+
+  --text-tiny: .8rem;
 }
 
 @layer components {
