@@ -8,9 +8,39 @@
   --color-silver-blue: #5A86CB;
 }
 
+@layer components {
+  .underline-fancy {
+    @apply relative inline-block;
+  }
+
+  .underline-fancy::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: var(--color-burgundy);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .underline-fancy:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+
 @layer base {
   body {
     @apply bg-[--color-misty-rose] text-[--color-lapis-blue] flex items-center justify-center min-h-screen transition-colors ease-in-out duration-700;
     font-family: 'Quicksand', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Comfortaa', cursive;
   }
 }
