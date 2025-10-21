@@ -1,7 +1,7 @@
-<h1 align="center">🌬️ Respira</h1>
+<h1 align="center">Respira</h1>
 <p align="center">Projeto desenvolvido para promover momentos de calma e reconexão através de uma experiência digital suave e guiada por respiração.</p>
 
-### 🪷 Tabela de conteúdos
+### Tabela de conteúdos
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
@@ -13,7 +13,7 @@
 
 ---
 
-### 🌸 Objetivo
+### Objetivo
 
 O objetivo deste projeto é criar uma aplicação de **respiração guiada**, onde o usuário é convidado a desacelerar e acompanhar um ciclo visual e sonoro que estimula o bem-estar e a calma.
 
@@ -21,7 +21,7 @@ Cada fase da respiração (inspirar, segurar e expirar) é acompanhada por **ani
 
 ---
 
-### 🌿 Funcionalidades
+### Funcionalidades
 
 - **Ciclo de Respiração Guiada:** Transições suaves entre inspirar, segurar e expirar.
 - **Sons Relaxantes:** Utiliza *Howler.js* para tocar sons sincronizados em cada fase.
@@ -40,3 +40,31 @@ Cada fase da respiração (inspirar, segurar e expirar) é acompanhada por **ani
 4. **Pare quando quiser:** Clique novamente em "Parar sessão" para encerrar o ciclo.  
 
 ---
+
+### Instalação
+
+Para executar este projeto localmente:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/respira.git
+
+2. **Mavuegue até o diretório:**
+   ```bash
+   cd respira
+
+   
+3. **Instale as dependencias:**
+   ```bash
+   npm install
+   
+4. **Inicie o servidor:**
+   ```bash
+   npm run dev
+
+5. **Abra no navegador:**
+  ```bash
+  http://localhost:5173
+
+
+
