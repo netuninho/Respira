@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+<h1 align="center">🌬️ Respira</h1>
+<p align="center">Projeto desenvolvido para promover momentos de calma e reconexão através de uma experiência digital suave e guiada por respiração.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🪷 Tabela de conteúdos
 
-Currently, two official plugins are available:
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#uso">Uso</a> • 
+ <a href="#instalação">Instalação</a> • 
+ <a href="#tecnologias">Tecnologias</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### 🌸 Objetivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo deste projeto é criar uma aplicação de **respiração guiada**, onde o usuário é convidado a desacelerar e acompanhar um ciclo visual e sonoro que estimula o bem-estar e a calma.
 
-## Expanding the ESLint configuration
+Cada fase da respiração (inspirar, segurar e expirar) é acompanhada por **animações suaves** e **sons relaxantes**, criando uma experiência imersiva e acolhedora.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🌿 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Ciclo de Respiração Guiada:** Transições suaves entre inspirar, segurar e expirar.
+- **Sons Relaxantes:** Utiliza *Howler.js* para tocar sons sincronizados em cada fase.
+- **Animações Fluidas:** Criadas com *Framer Motion* para representar visualmente o movimento da respiração.
+- **Design Responsivo:** Interface adaptada para diferentes tamanhos de tela.
+- **Paleta Suave e Acolhedora:** Tons personalizados via sistema `@theme` do Tailwind v4.
+- **Acessibilidade:** Elementos com `aria-label` e foco visível.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Uso
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Inicie a sessão:** Clique no botão "Iniciar sessão" para começar o ciclo de respiração.  
+2. **Respire junto:** Observe o círculo expandindo e contraindo conforme as instruções ("Inspira", "Segura", "Expira").  
+3. **Ative ou desative o som:** Use o botão de som para controlar os efeitos sonoros.  
+4. **Pare quando quiser:** Clique novamente em "Parar sessão" para encerrar o ciclo.  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
