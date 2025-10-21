@@ -1,8 +1,7 @@
 <h1 align="center">Respira</h1>
 <p align="center">Projeto desenvolvido para promover momentos de calma e reconexão através de uma experiência digital suave e guiada por respiração.</p>
 
-### Tabela de conteúdos
-
+<h1 align="center">Tabela de Conteúdos</h1>
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
  <a href="#funcionalidades">Funcionalidades</a> • 
@@ -43,28 +42,38 @@ Cada fase da respiração (inspirar, segurar e expirar) é acompanhada por **ani
 
 ### Instalação
 
-Para executar este projeto localmente:
+Para executar este projeto localmente, siga estas etapas:
 
-1. **Clone o repositório:**
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
+
+2. **Navegue até o diretório do projeto**:
+    ```bash
+    cd nome-do-repositorio
+    ```
+3. **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+
+4. **Inicie o servidor:
+    ```bash
+    npm run dev
+    ```
+
+5. **Abra no navegador**.
    ```bash
-   git clone https://github.com/seu-usuario/respira.git
+   http://localhost:5173
+    ```
 
-2. **Mavuegue até o diretório:**
-   ```bash
-   cd respira
+###  Tecnologias
 
-   
-3. **Instale as dependencias:**
-   ```bash
-   npm install
-   
-4. **Inicie o servidor:**
-   ```bash
-   npm run dev
+As seguintes ferramentas foram usadas na construção do projeto:
 
-5. **Abra no navegador:**
-  ```bash
-  http://localhost:5173
-
-
-
+- React + Typescript -> Estrutura do app
+- Tailwind -> Estilização com váriaveis @theme
+- Framer Motion -> Animações de transição
+- Howler.js -> Gerenciamento e reprodução de sons
+- Vite -> Build e servidor local 
